@@ -1,3 +1,4 @@
 
-
-print('teste')
+def main():
+    return {'teste'}
+print('rodo')
