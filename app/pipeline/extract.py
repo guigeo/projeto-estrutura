@@ -2,10 +2,10 @@
 
 import glob
 import os
-
 import pandas as pd
 
-input_folder='C:/Projetos/projeto-estrutura/data/input'
+#input_folder='C:/Projetos/projeto-estrutura/data/input'
+input_folder='C:/Users/guilherme.barbosa/Documents/meu_git/projeto-estrutura/data/input'
 
 def extract_excel(input_folder):
     """
@@ -19,7 +19,9 @@ def extract_excel(input_folder):
     all_data = [pd.read_excel(file) for file in files]
     return all_data
 
-if  __name__ == '__main__':
+if __name__ == '__main__':
     df = extract_excel(input_folder)
     print (df)
+
+
     

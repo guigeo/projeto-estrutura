@@ -1,5 +1,6 @@
+from pipeline.extract import extract_excel
 
+input_folder='C:/Users/guilherme.barbosa/Documents/meu_git/projeto-estrutura/data/input'
 
-def main():
-    return {'teste'}
-print('rodo')
+df = extract_excel(input_folder)
+print (df)
